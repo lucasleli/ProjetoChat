@@ -2,9 +2,21 @@
 
 require_once("config.php");
 
-$pesquisa = new Usuario();
+//////////////////////////////////////////
+/*
+$search = Usuario::search("pe"); //Realiza pesquisa de usuários pelo login
 
-$pesquisa->loadById(2);
+echo json_encode($search);
+*/
 
-echo $pesquisa;
+////////////////////////////////////////
+
+$usuario = new Usuario(); // Realiza a pesquisa por cadastro por meio de autenticação Login/Senha
+$usuario->login("lucas", "1997");
+
+echo $usuario;
+
+///////////////////////////////////////
+
+
  ?>
