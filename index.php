@@ -21,13 +21,13 @@ echo $usuario;
 
 ///////////////////////////////////////
 
-/*
+
 $aluno = new Usuario("teste2", "484s"); // Cadastra um novo usuário, precisando adiocionar apenas o LOGIN e SENHA
 
 $aluno->insert();
 
 echo $aluno;
-*/
+
 
 
  ?>
