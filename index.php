@@ -10,13 +10,17 @@ echo json_encode($search);
 */
 
 ////////////////////////////////////////
-
+/*
 $usuario = new Usuario(); // Realiza a pesquisa por cadastro por meio de autenticação Login/Senha
 $usuario->login("lucas", "1997");
 
 echo $usuario;
-
+*/
 ///////////////////////////////////////
 
+$aluno = new Usuario("teste2", "484s");
 
+$aluno->insert();
+
+echo $aluno;
  ?>
