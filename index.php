@@ -29,13 +29,32 @@ $aluno->insert();
 echo $aluno;
 */
 
+
 ///////////////////////////////////////
 
-$usuario = new Usuario();
+/*
+$usuario = new Usuario(); // Altera dados do cadastro, neste caso altera apenas as credenciais
 
 $usuario->loadById(6);
 
 $usuario->update("kyma", "4871");
 
 echo $usuario;
+*/
+
+//////////////////////////////////////
+
+/*
+$usuario = new Usuario(); // Apaga cadastro do banco, precisando apenas passar o ID
+
+$usuario->loadById(7);
+
+$usuario->delete();
+
+echo $usuario;
+*/
+
+//////////////////////////////////////
+
+
  ?>
