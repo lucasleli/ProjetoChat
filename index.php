@@ -56,5 +56,8 @@ echo $usuario;
 
 //////////////////////////////////////
 
+$arquivo = new FileManager(); // Apaga um diretório (pasta)
+
+$arquivo->apagarPasta("lucas");
 
  ?>
