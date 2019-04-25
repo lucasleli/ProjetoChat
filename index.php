@@ -56,8 +56,8 @@ echo $usuario;
 
 //////////////////////////////////////
 
-$arquivo = new FileManager(); // Apaga um diretório (pasta)
+$arquivo = new FileManager(); // Escaneia uma pasta e retona um Array com as informações. Neste código resolvi converter o array em json.
+echo json_encode($arquivo->escanearPasta("lucas"));
 
-$arquivo->apagarPasta("lucas");
 
  ?>

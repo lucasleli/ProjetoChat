@@ -38,6 +38,38 @@
 
 	}
 
+	public function escanearPasta($nome) {
+
+		if (is_dir($nome)) {
+
+			$arquivos = scandir($nome);
+
+			$dados = array();
+			
+			foreach ($arquivos as $arq) {
+
+				if (!in_array($arq, array(".", ".."))) {
+					
+					$filename = $nome . DIRECTORY_SEPARATOR . $arq;
+
+					$info = pathinfo($filename);
+
+					array_push($dados, $info);
+
+				}
+				
+			}
+
+			return $dados;
+
+		} else {
+
+			echo "Diretório $nome não existe!";
+
+		}
+
+	}
+
 	}
 
 	
