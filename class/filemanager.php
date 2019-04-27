@@ -38,7 +38,7 @@
 
 	}
 
-	public function escanearPasta($nome) {
+	public function escanearPasta($nome) { // Escaneia um diretório e retorna um array com os valores
 
 		if (is_dir($nome)) {
 
@@ -49,10 +49,12 @@
 			foreach ($arquivos as $arq) {
 
 				if (!in_array($arq, array(".", ".."))) {
-					
+
 					$filename = $nome . DIRECTORY_SEPARATOR . $arq;
 
 					$info = pathinfo($filename);
+
+					$info["size"] = filesize($filename); // adiciona o tamanho do arquivo em bytes no array
 
 					array_push($dados, $info);
 
